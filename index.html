@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-b from-yellow-300 to-red-700 relative">
+    <div class="font-serif text-center text-3xl relative top-32 font-bold">CGPA  CALCULATOR</div>
+    <div class="flex h-screen items-center justify-center">
+         
+        <div class="wecome-form w-4/5 h-2/4 bg-white shadow-md border-black md:w-1/2 md:h-auto">
+            <img src="/images/profile.jpg" alt="" class="h-20 rounded-lg m-auto p-2 mt-4"> 
+            <form name="myForm" action="second.html" onsubmit="passName(),passRoll()" class="pt-7 text-black text-center">
+                <!-- <lable class="font-extrabold" >NAME</lable> -->
+                <input type="text" id="name" required  placeholder="Your name" class="w-1/2 border-b-2 border-orange-600 outline-none bg-transparent text-center text-2xl focus:animate-bounce focus:border-black focus:text-3xl pt-2 pb-1 px-2"><br><br>
+                <!-- <lable class="font-extrabold">ROLL NO</lab> -->
+                <input type="text" required id="roll" placeholder="BE20F05FXX" class="w-1/2 outline-none bg-transparent border-b-2 border-orange-600 text-2xl text-center focus:animate-bounce focus:border-black focus:text-3xl pt-2 pb-1">
+                <br><br>
+<br>
+                <button><img src="/images/continue.png" class="h-20 md:pb-2 m-auto rounded-full cursor-pointer hover:url('bg1.jpg')" ></button>
+            </form>
+        </div>
+    </div>
+    <div class="mb-4 text-2xl text-center relative bottom-32 font-mono">Made Being Single <div>&#10084;</div></div>
+<script src="index.js"></script>
+</body>
+</html>

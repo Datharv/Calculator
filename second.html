@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+    <title>CGPA CALCULATOR</title>
+</head>
+
+<body class="bg-gradient-to-b from-yellow-300 to-red-700 m-auto relative">
+    <header class=" text-blue-900 text-center p-4 text-2xl font-serif font-bold">COMPUTER SCIENCE AND ENGINEERING
+    </header>
+    <h1 class="text-center m-auto font-medium text-xl pb-2 border-b-2 border-black mb-8 w-2/5 md:w-1/6">SEMESTER IV</h1>
+    <form action="marksheet.html" class="bg-white md:w-2/3 m-auto" onsubmit="passCgpa(),printGrade()">
+        <div class="container dark:bg-slate-800 ">
+            <div class="flex w-full m-auto p-4  border-slate-800">
+                <div class="subject w-full mr-6 text-2xl pl-2">Data Structures</div>
+                <select class="marks w-1/4 outline-none" id="mark1" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+
+            <div class="flex w-full m-auto p-4  border-slate-800">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2 ">Microprocessor and Interfacing</div>
+                <select class="marks w-1/4 outline-none" id="mark2" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="flex w-full m-auto p-4  border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">Computer Architecture and Organization</div>
+                <select class="marks w-1/4 outline-none" id="mark3" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+
+            <hr>
+            <div class="flex w-full m-auto p-4  border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">Lab Data Structures</div>
+                <select class="marks w-1/4 outline-none" id="mark4" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="flex w-full m-auto p-4  border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">Lab Microprocessor and Interfacing</div>
+                <select class="marks w-1/4 outline-none" id="mark5" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="flex w-full m-auto p-4  border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">Java Programming</div>
+                <select class="marks w-1/4 outline-none" id="mark6" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="flex w-full m-auto p-4  border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">Lab Python Programming</div>
+                <select class="marks w-1/4 outline-none" id="mark7" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="flex w-full m-auto p-4  border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">OSST</div>
+                <select class="marks w-1/4 outline-none" id="mark8" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="flex w-full m-auto p-4  border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">Rural technology / Watershed Management</div>
+                <select class="marks w-1/4 outline-none" id="mark9" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="flex w-full m-auto p-4   border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">Matlab Programming / Renewable engergy
+                    engineering</div>
+                <select class="marks w-1/4 outline-none" id="mark10" onchange="">
+                    <option value="10">A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+            <div class="flex w-full m-auto p-4  border-slate-800 ">
+                <div class="subject w-full mr-6 text-2xl font-serif pl-2">PECL / Constitution of India</div>
+                <select class="marks w-1/4 outline-none" id="mark11" onchange="">
+                    <option value="10" selected>A++</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="0">D</option>
+                    <option value="0">D1</option>
+                    <option value="0">D2</option>
+                    <option value="0">D3</option>
+                </select>
+            </div>
+            <hr>
+        </div>
+        <button class="text-2xl mt-10 ml-28 bg-black text-white mb-10 p-4 w-2/5 border-2 rounded-lg border-black active:bg-green-600 md:w-1/6 md:relative left-1/3">Calculate</button>
+    </form>
+
+    <script>
+        function calculate() {
+            const credit = [4, 4, 4, 1, 1, 2, 1, 2, 3, 3, 3];
+            const totalCredit = 28;
+            var sel = document.querySelectorAll('.marks');
+            let gra = [];
+            for (var i = 0; i < sel.length; i++) {
+                gra[i] = sel[i].options[sel[i].selectedIndex].innerHTML;
+
+            }
+
+            localStorage.setItem('links', JSON.stringify(gra));
+
+            var grade = [];
+            for (var i = 0; i < sel.length; i++) {
+                grade[i] = sel[i].options[sel[i].selectedIndex].value;
+            }
+
+
+
+            let cgpa = 0;
+            for (let i = 0; i < credit.length; i++) {
+                cgpa = cgpa + credit[i] * grade[i];
+            }
+
+            lastCgpa = cgpa / totalCredit;
+
+            return (lastCgpa.toFixed(2));
+
+        }
+    </script>
+    <script src="index.js"></script>
+    <script>
+        window.history.forward();
+        function noBack()
+        {
+            window.history.forward();
+        }
+    </script>
+
+</body>
+
+</html>
